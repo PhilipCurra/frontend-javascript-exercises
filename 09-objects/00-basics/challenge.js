@@ -28,15 +28,3 @@ module.exports.canIGet = function(item, money) {
 	}
 	
 }
-
-
-
-
-module.exports.canIGet = function(item, money) {
-	if(item=='MacBook Air' && money>=999 || item=='MacBook Pro' && money>=1299 || item=='Mac Pro' && money>=2499 || item=='Apple Sticker' && money>=1) {
-		return(true);
-	}
-	else {
-		return(false);
-	}
-}
