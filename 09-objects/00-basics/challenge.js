@@ -17,11 +17,6 @@ module.exports.formLetter = function(letter) {
 }
 
 module.exports.canIGet = function(item, money) {
-	//var cat = {'MacBook Air': 999, 'MacBook Pro': 1299, 'Mac Pro': 2499, 'Apple Sticker': 1};
-	if(item=='MacBook Air' && money>=999 || item=='MacBook Pro' && money>=1299 || item=='Mac Pro' && money>=2499 || item=='Apple Sticker' && money>=1){
-		return(true);
-	}
-	else {
-		return(false);
-	}
+	var cat = {'MacBook Air': 999, 'MacBook Pro': 1299, 'Mac Pro': 2499, 'Apple Sticker': 1};
+	return(cat[item]<=money);
 }
