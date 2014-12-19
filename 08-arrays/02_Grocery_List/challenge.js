@@ -1,4 +1,14 @@
 module.exports.addItem = function(obj, arr) {
+	if(arr.indexOf(obj)==-1) {
+		arr.push(obj);
+		return(arr);
+	}
+	else {
+		return(arr);
+	}
+}
+
+/* module.exports.addItem = function(obj, arr) {
 	var check = "check";
 	for(i=0; i<arr.length; i++) {
 		if(arr[i]===obj){
@@ -12,7 +22,7 @@ module.exports.addItem = function(obj, arr) {
 		arr.push(obj);
 		return(arr);
 	}
-};
+}; */
 
 module.exports.reverseSortedList = function(arr) {
 	arr.sort();	
